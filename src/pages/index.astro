@@ -1,5 +1,5 @@
 ---
-import AboutExpertise from "../components/AboutExpertise.astro";
+import SectionProblemSolution from "../components/SectionProblemSolution.astro";
 import Hero from "../components/Hero.astro";
 import Asterisco from "../components/ico/Asterisco.astro";
 import ServicesShowcase from "../components/ServicesShowcase.astro";
@@ -7,6 +7,8 @@ import Banner from "../components/ui/Banner.astro";
 import Header from "../components/ui/Header.astro";
 
 import Layout from "../layouts/Layout.astro";
+import Methodology from "../components/Methodology.astro";
+import CTAFooter from "../components/CTAFooter.astro";
 
 // Header to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -15,7 +17,15 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <Hero />
   <!-- <Services /> -->
-   <Banner />
-   <AboutExpertise />
-   <ServicesShowcase />
+  <Banner />
+  <SectionProblemSolution />
+  <div class="relative bg-[#0a2540] h-8">
+  <!-- capa del patrón -->
+  <div
+    class="absolute left-0 right-0 top-0 h-8 rounded-t-3xl z-0
+           [background:repeating-linear-gradient(135deg,_transparent,_transparent_10px,_rgba(255,255,255,0.06)_10px,_rgba(255,255,255,0.06)_20px)]">
+  </div>
+</div>
+  <Methodology />
+  <CTAFooter />
 </Layout>
